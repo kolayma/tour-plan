@@ -129,12 +129,17 @@
     &__slider
       margin-bottom: 20px   
 @media (max-width: 320px)
-  .logo
-    width: 99px
-    height: 13.42px
-  .slider
-     height: 350px
-  .hotel
-    &__slider
-      margin-bottom: 20px   
+  .breadcrumb, .hotel-wrapper, .hotel-description, .swiper, .slider, .booking, .map, .hotel, .newsletter
+    display: none
+  .user, .search, .navbar-bottom
+    display: contents
+    display: flex
+    align-items: flex-start
+    flex-direction: column
+  .user
+    display: block
+    width: 100%
+    
+
+  
 
