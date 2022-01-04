@@ -1044,6 +1044,12 @@ template {
   margin-bottom: 23px;
   resize: none;
 }
+.footer__butinfo {
+  display: flex;
+  justify-content: space-between;
+  grid-row: 2/4;
+  grid-column: span 2;
+}
 .footer__button {
   min-width: 160px;
   min-height: 50px;
@@ -1056,6 +1062,7 @@ template {
   background-color: #EC1F46;
   border: none;
   border-radius: 4px;
+  margin-bottom: 95px;
 }
 .footer__info {
   font-style: normal;
@@ -1063,6 +1070,23 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #E0E0E0;
+}
+.footer__disclaimer {
+  display: flex;
+  justify-content: space-between;
+  grid-row: 5/5;
+  grid-column: 2/span 3;
+  margin-bottom: 46px;
+}
+.footer__disclaimer-policy {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+.footer__disclaimer-payments {
+  width: 136px;
+  height: 22px;
 }
 
 @media (max-width: 1200px) {
@@ -1088,23 +1112,6 @@ template {
 
   .footer__input {
     flex-basis: 100%;
-  }
-  .footer__logo {
-    grid-row: 1/2;
-  }
-  .footer__social-network {
-    grid-row: 1/2;
-    grid-column: span 4;
-    align-self: center;
-  }
-  .footer__categories {
-    grid-row: 2/3;
-  }
-  .footer__contact-details {
-    grid-row: 3;
-  }
-  .footer__contact-form {
-    grid-row: 4;
   }
 }
 @media (max-width: 992px) {
@@ -1175,6 +1182,10 @@ template {
   .card {
     width: 340px;
     height: 250px;
+  }
+
+  .footer__input {
+    flex-basis: 100%;
   }
 }
 @media (max-width: 768px) {
@@ -1288,13 +1299,43 @@ template {
     width: 49%;
     height: 255px;
   }
+
+  .footer-wrapper {
+    grid-template-columns: repeat(6, 1fr);
+    grid-row-gap: 40px;
+  }
+  .footer__input {
+    flex-basis: 49%;
+  }
+  .footer__logo {
+    grid-row: 1/2;
+    grid-column: span 2;
+  }
+  .footer__social-network {
+    grid-row: 1/2;
+    grid-column: span 4;
+    align-self: center;
+  }
+  .footer__categories {
+    grid-row: 2/3;
+    grid-column: span 2;
+  }
+  .footer__legal {
+    grid-column: span 2;
+  }
+  .footer__additional {
+    grid-column: span 2;
+  }
+  .footer__contact-details {
+    grid-column: span 5;
+    grid-row: 3;
+  }
+  .footer__contact-form {
+    grid-column: span 5;
+    grid-row: 4;
+  }
 }
 @media (max-width: 576px) {
-  .logo {
-    width: 99px;
-    height: 13.42px;
-  }
-
   .hotel__slider {
     margin-bottom: 20px;
   }
@@ -1320,13 +1361,40 @@ template {
   .card {
     width: 100%;
   }
+
+  .footer-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .footer__logo {
+    grid-row: 1;
+    grid-column: 1;
+  }
+  .footer__social-network {
+    grid-row: 2;
+    grid-column: 1;
+  }
+  .footer__additional {
+    grid-row: 3;
+    grid-column: 1;
+  }
+  .footer__categories {
+    grid-row: 4;
+    grid-column: 1;
+  }
+  .footer__legal {
+    grid-row: 5;
+    grid-column: 1;
+  }
+  .footer__contact-details {
+    grid-row: 6;
+    grid-column: 1;
+  }
+  .footer__contact-form {
+    grid-row: 7;
+    grid-column: 1;
+  }
 }
 @media (max-width: 480px) {
-  .logo {
-    width: 99px;
-    height: 13.42px;
-  }
-
   .slider {
     height: 350px;
   }
@@ -1338,9 +1406,41 @@ template {
   .reviews-slider__item {
     max-width: 380px;
   }
+
+  .footer-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .footer__logo {
+    grid-row: 1;
+    grid-column: 1;
+  }
+  .footer__social-network {
+    grid-row: 2;
+    grid-column: 1;
+  }
+  .footer__additional {
+    grid-row: 3;
+    grid-column: 1;
+  }
+  .footer__categories {
+    grid-row: 4;
+    grid-column: 1;
+  }
+  .footer__legal {
+    grid-row: 5;
+    grid-column: 1;
+  }
+  .footer__contact-details {
+    grid-row: 6;
+    grid-column: 1;
+  }
+  .footer__contact-form {
+    grid-row: 7;
+    grid-column: 1;
+  }
 }
 @media (max-width: 320px) {
-  .breadcrumb, .hotel-wrapper, .hotel-description, .swiper, .slider, .booking, .map, .hotel, .newsletter {
+  .search__input, .user__avatar, .user__name {
     display: none;
   }
 
@@ -1358,5 +1458,41 @@ template {
 
   .reviews-slider__item {
     max-width: 281px;
+  }
+
+  .footer__social-network {
+    flex-wrap: wrap;
+  }
+  .footer__title--inline {
+    flex-basis: 100%;
+    margin-bottom: 22px;
+  }
+  .footer__contact {
+    max-width: 280px;
+  }
+  .footer__contact-form {
+    max-width: 280px;
+  }
+  .footer__input {
+    flex-basis: 100%;
+  }
+  .footer__button {
+    flex-basis: 100%;
+  }
+  .footer__info {
+    margin-bottom: 20px;
+  }
+  .footer__butinfo {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap-reverse;
+  }
+  .footer__disclaimer-policy {
+    grid-row: 8;
+    grid-column: 1;
+  }
+  .footer__disclaimer-payments {
+    grid-row: 9;
+    grid-column: 1;
   }
 }/*# sourceMappingURL=style.css.map */

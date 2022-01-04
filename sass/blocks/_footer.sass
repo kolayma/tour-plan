@@ -88,6 +88,11 @@
     height: 123px
     margin-bottom: 23px
     resize: none
+  &__butinfo
+    display: flex
+    justify-content: space-between
+    grid-row: 2 / 4
+    grid-column: span 2
   &__button
     min-width: 160px
     min-height: 50px
@@ -100,11 +105,27 @@
     background-color: $primary
     border: none
     border-radius: 4px
+    margin-bottom: 95px
   &__info
     font-style: normal
     font-weight: bold
     font-size: 12px
     line-height: 15px
-    color: #E0E0E0  
+    color: #E0E0E0 
+  &__disclaimer
+    display: flex
+    justify-content: space-between
+    grid-row: 5 / 5
+    grid-column: 2 / span 3
+    margin-bottom: 46px
+    &-policy
+     font-weight: 400
+     font-style: normal
+     font-size: 12px
+     line-height: 15px
+    &-payments
+     width: 136px
+     height: 22px  
+
 
 
