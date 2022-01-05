@@ -1066,6 +1066,7 @@ template {
   border: none;
   border-radius: 4px;
   margin-bottom: 95px;
+  cursor: pointer;
 }
 .footer__info {
   font-style: normal;
