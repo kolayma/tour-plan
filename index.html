@@ -460,38 +460,28 @@
         <img src="img/close.svg" alt="icon: close" />
       </a>
       <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-      <form action="" method="POST" class="footer__form">
-        <input 
-        type="text" 
-        class="input footer__input" 
-        placeholder="Your Full Name*" 
-        name="name"
-        />
-        <input 
-        type="text" 
-        class="input footer__input" 
-        placeholder="Phone Number*" 
-        name="phone" 
-        />
-        <input 
-        type="text" 
-        class="input footer__input" 
-        placeholder="Email*" 
-        name="email" 
-        />
-        <textarea 
-        class="footer__message" 
-        placeholder="message" 
-        name="message"
-        ></textarea>
-       <div class="footer__butinfo">
-          <button class="button footer__button" type="submit">Send</button>
-        <span class="footer__info">* Required Fields</span>
-       </div>
-      </form>  
+        <form action="send.php" method="POST" class="footer__form">
+          <input 
+          type="text" 
+          class="input footer__input" 
+          placeholder="Your Full Name*" 
+          name="name"
+          />
+          <input 
+          type="text" 
+          class="input footer__input" 
+          placeholder="Phone Number*" 
+          name="phone" 
+          />
+          <textarea 
+          class="footer__message" 
+          placeholder="message" 
+          name="message"
+          ></textarea>
     </div>
     <!-- /.modal__dialog -->
   </div>
+  <!-- /.modal -->
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
